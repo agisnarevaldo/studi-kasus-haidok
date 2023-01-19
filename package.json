@@ -1,0 +1,15 @@
+{
+  "name": "haidok",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "browser-sync -sw"
+  },
+  "keywords": [],
+  "author": "agis",
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.27.11"
+  }
+}
