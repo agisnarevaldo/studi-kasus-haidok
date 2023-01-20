@@ -100,4 +100,41 @@ main > article.left > h1 {
 
 main article.right {
   width: 50%;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+.card {
+  background-color: white;
+  position: absolute;
+  right: 33%;
+  top: 30%;
+  width: 25%;
+  padding: 15px;
+  border-radius: 10px;
+  
+}
+
+.card > .head-card {
+  display: flex;
+  margin-bottom: 10px;
+  gap: 10px;
+  align-items: center;
+  /* background-color: cyan; */
+  /* justify-content: flex-end; */
+}
+
+.card > .head-card > p {
+  width: 90%;
+  /* background-color: whitesmoke; */
+  display: flex;
+  justify-content: space-between;
+}
+
+.card > .head-card span#q{
+ /* margin-left: 80%;  */
+   font-weight: bold;
+   display: flex;
+   font-size: 30px;
+   font-family: Arial, Helvetica, sans-serif;
 }
