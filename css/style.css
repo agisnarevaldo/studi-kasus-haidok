@@ -26,6 +26,10 @@ nav {
   gap: 10px;
 }
 
+.logo > h2 {
+  color: var(--primary);
+}
+
 ul {
   display: flex;
   /* background-color: cyan; */
@@ -62,16 +66,17 @@ a#active {
   margin: 0 10px;
   font-size: 1em;
   cursor: pointer;
+  color: wheat;
 }
 
 .cta > #bt-login {
-  background-color: white;
+  background-color: transparent;
   border: none;
 }
 
 .cta > #bt-book {
   background-color: transparent;
-  border: 1px solid var(--primary);
+  border: 1px solid wheat;
 }
 
 main {
@@ -109,6 +114,13 @@ main > article.left > p {
   color: var(--primary);
 } 
 
+main >  article.left > button {
+  width: 235px;
+  height: 60px;
+  background-color: var(--primary);
+  color: white;
+}
+
 main article.right {
   width: 50%;
   flex-direction: row;
@@ -118,6 +130,8 @@ main article.right {
   align-items: flex-end;
   height: 90vh;
   /* padding-top: 35px; */
+  /* transform: skewY(-30deg); */
+  /* clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%); */
 }
 
 .card {
@@ -161,4 +175,17 @@ main article.right {
 .card > .desc-card p {
   line-height: 1.5;
   font-size: 0.8em;
+}
+
+.shape {
+  display: flex;
+  background-color: var(--primary);
+  /* transform: skewY(-30deg); */
+  width: 600px;
+  height: 100vh;
+  clip-path: polygon(25% 0%, 100% 0%, 75% 100%, 0% 100%);
+  position: absolute;
+  top: 0;
+  right: 15px;
+  z-index: -2;
 }
